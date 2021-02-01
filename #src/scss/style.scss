@@ -106,6 +106,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
 
   // .page__info--item
@@ -114,16 +115,27 @@ body {
     display: flex;
     flex-direction: column;
     width: 200px;
+    background-color: #d3d0ec94;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
   }
 
   // .page__info--data
 
   &__info--data {
     font-size: 3rem;
+    height: 40%;
+    flex: 1;
+    margin-top: 50px;
   }
 
   // .page__info--title
 
   &__info--title {
+    display: block;
+    height: 40%;
+    text-align: center;
   }
 }
