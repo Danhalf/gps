@@ -1029,6 +1029,113 @@ body.ie ._ibg img {
   color: #03032e;
 }
 
+.products__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products__categories {
+  width: 25%;
+}
+
+.products__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.breadcrumb {
+  width: 100%;
+  min-height: 80px;
+}
+
+.categories__items {
+  margin: 20px 20px 0 0;
+}
+
+.categories__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #03032e;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-item {
+  width: 30%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #03032e;
+}
+
+.product-item__img {
+  width: 100%;
+  border-bottom: 1px solid #03032e;
+}
+
+.product-item__title {
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.product-item__price {
+  display: block;
+  text-align: center;
+}
+
+.product-item__button {
+  width: 80%;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #03032e;
+  margin: 0 0.3em 0.3em 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #03032e;
+  text-align: center;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+  background-color: inherit;
+}
+
+.product-item__button:hover {
+  background-color: rgba(46, 60, 187, 0.404);
+  border-color: #dddddd;
+}
+
+.product-item__button:active {
+  background-color: rgba(46, 60, 187, 0.404);
+  border-color: #bbbbbb;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
