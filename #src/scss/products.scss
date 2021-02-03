@@ -1,0 +1,145 @@
+products {
+}
+//====================================================================================================
+
+//====================================================================================================
+
+.products {
+  // .products__container
+
+  &__container {
+  }
+
+  // .products__content
+  &__content {
+    display: flex;
+  }
+
+  // .products__categories
+
+  &__categories {
+    width: 25%;
+  }
+
+  // .products__items
+
+  &__items {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  // .products__item
+
+  &__item {
+  }
+}
+
+.breadcrumb {
+  width: 100%;
+  min-height: 80px;
+}
+.categories {
+  // .categories__title
+
+  &__title {
+  }
+
+  // .categories__items
+
+  &__items {
+  }
+
+  // .categories__item
+
+  &__item {
+  }
+}
+.product-item {
+  width: 30%;
+  min-height: 300px;
+  // .product-item__img
+  display: flex;
+  flex-direction: column;
+  &__img {
+    width: 100%;
+  }
+
+  // .product-item__title
+
+  &__title {
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  // .product-item__price
+
+  &__price {
+    display: block;
+    text-align: center;
+  }
+
+  // .product-item__button
+
+  &__button {
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.15s;
+  }
+}
+.prev {
+  // .prev__button
+
+  &__button {
+  }
+}
+.page {
+  // .page__button
+
+  &__button {
+  }
+}
+.next {
+  // .next__button
+
+  &__button {
+  }
+}
+
+.products {
+  // .products__page-changer
+
+  &__page-changer {
+  }
+}
+.prev {
+  // .prev__button
+
+  &__button {
+  }
+}
+.page {
+  // .page__button
+
+  &__button {
+  }
+}
+.next {
+  // .next__button
+
+  &__button {
+  }
+}
