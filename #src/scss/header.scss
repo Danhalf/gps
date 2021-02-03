@@ -50,6 +50,7 @@
 
 .header {
   // .header__content
+  background: $bgcolor;
   &__content {
     display: flex;
   }
@@ -69,6 +70,9 @@
 
   &__navigation {
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   // .header__navigation--link

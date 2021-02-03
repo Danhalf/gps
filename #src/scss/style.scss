@@ -8,13 +8,12 @@
 //&display=swap&subset=cyrillic-ext
 @import 'fonts';
 //</Подключаем шрифты>=======================================================================================
-
 //<Иконочные шрифты>==========================================================================================
 //@import "icons";
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: '';
+$fontFamily: 'Roboto';
 //</Шрифт по умолчанию>==========================================================================================
 
 //</ШРИФТЫ>=======================================================================================================
@@ -27,7 +26,8 @@ $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
-$mainColor: rgb(46, 60, 187);
+$mainColor: rgb(3, 3, 46);
+$bgcolor: rgba(34, 80, 148, 0.705);
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import 'null';
@@ -37,7 +37,8 @@ body {
   line-height: 200%;
   background-color: rgb(196, 190, 190);
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $fontFamily, sans-serif;
+  position: relative;
   &._lock {
     overflow: hidden;
   }
@@ -94,10 +95,16 @@ body {
   flex: 1 1 auto;
   background-image: url(../img/main_bg.webp);
   background-repeat: no-repeat;
-  background-size: 100%;
+  min-height: 1000px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
   // .page__title
 
   &__title {
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
   }
 
   // .page__info
@@ -111,15 +118,23 @@ body {
 
   // .page__info--item
 
-  &__info--item {
+  // .page__codex
+
+  &__info--item,
+  &__codex {
     display: flex;
     flex-direction: column;
     width: 200px;
-    background-color: #d3d0ec94;
+    background-color: $bgcolor;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
     min-height: 200px;
+  }
+
+  &__codex {
+    width: 85%;
+    margin: 50px auto;
   }
 
   // .page__info--data

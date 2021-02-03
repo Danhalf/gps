@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 * {
   padding: 0px;
   margin: 0px;
@@ -39,7 +41,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "";
+  font-family: "Roboto";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -48,7 +50,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "";
+  font-family: "Roboto";
 }
 
 input::-ms-clear {
@@ -92,11 +94,12 @@ h6 {
 }
 
 body {
-  color: #2e3cbb;
+  color: #03032e;
   font-size: 20px;
   line-height: 200%;
   background-color: #c4bebe;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 body._lock {
@@ -978,6 +981,10 @@ body.ie ._ibg img {
 }
 */
 
+.header {
+  background: rgba(34, 80, 148, 0.705);
+}
+
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,11 +1004,29 @@ body.ie ._ibg img {
 
 .header__navigation {
   padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__navigation--link {
-  color: #2e3cbb;
+  color: #03032e;
   margin-left: 15px;
+}
+
+.footer {
+  min-height: 200px;
+  background-color: rgba(34, 80, 148, 0.705);
+}
+
+.footer a {
+  color: #03032e;
 }
 
 .page {
@@ -1010,7 +1035,16 @@ body.ie ._ibg img {
           flex: 1 1 auto;
   background-image: url(../img/main_bg.webp);
   background-repeat: no-repeat;
-  background-size: 100%;
+  min-height: 1000px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+}
+
+.page__title {
+  text-align: center;
+  margin: 50px;
+  font-size: 2rem;
 }
 
 .page__info {
@@ -1025,7 +1059,8 @@ body.ie ._ibg img {
           justify-content: center;
 }
 
-.page__info--item {
+.page__info--item,
+.page__codex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,7 +1069,7 @@ body.ie ._ibg img {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 200px;
-  background-color: #d3d0ec94;
+  background-color: rgba(34, 80, 148, 0.705);
   border-radius: 6px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1043,6 +1078,11 @@ body.ie ._ibg img {
       -ms-flex-align: center;
           align-items: center;
   min-height: 200px;
+}
+
+.page__codex {
+  width: 85%;
+  margin: 50px auto;
 }
 
 .page__info--data {
