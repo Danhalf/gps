@@ -82,6 +82,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 50;
   }
   .header__navigation {
     position: absolute;
@@ -92,7 +93,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 50;
     height: calc(100vh - 70px);
     transition: right 0.5s ease-in;
   }
@@ -119,7 +119,7 @@
 
 .header__navigation.active {
   right: 0;
-  width: 50%;
+  width: 100%;
 }
 
 @keyframes navLinksFade {

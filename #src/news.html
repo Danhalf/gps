@@ -5,11 +5,20 @@
     <div class="wrapper">
       @@include('_header.html',{})
 
-      <main class="news__page">
+      <main class="news">
         <div class="news__container _container">
           <nav class="breadcrumb">
             <a href="./index.html">GARANT GPS</a> >> <a href="#">Новости</a>
           </nav>
+          <div class="news__content">
+            <iframe
+              id="news-iframe"
+              src="https://p.dw.com/p/1GdIG/#autoTopicArticles"
+              scrolling="no"
+              >Ваш браузер не поддерживает iframe!</iframe
+            >
+            <!-- <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.liga.net%2Ftech%2Ftelecom%2Frss.xml&limit=5&showtitle=false&type=js"></script> -->
+          </div>
         </div>
       </main>
 
