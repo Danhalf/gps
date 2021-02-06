@@ -5,6 +5,16 @@ products {
 //====================================================================================================
 
 .products {
+  &__page {
+    flex: 1 1 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/sl_4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+  }
+
   // .products__container
 
   &__container {
@@ -51,6 +61,8 @@ products {
 
   &__items {
     margin: 20px 20px 0 0;
+    background: $bgcolor;
+    border-radius: 2px;
   }
 
   // .categories__item
@@ -58,22 +70,33 @@ products {
   &__item {
     display: flex;
     justify-content: space-between;
-    border: 1px solid $mainColor;
+    border-bottom: 1px solid rgba(191, 207, 250, 0.4);
     padding: 5px;
     align-items: center;
+
+    cursor: pointer;
+    &:hover {
+      text-shadow: 1px 2px 1px #000;
+    }
+    &:last-child {
+      border: none;
+    }
   }
 }
 .product-item {
   width: 30%;
   min-height: 300px;
-  // .product-item__img
+  background-color: $bgcolor;
   display: flex;
   flex-direction: column;
+  padding: 2px;
   align-items: center;
-  border: 1px solid $mainColor;
+  border: 1px solid $bgcolor;
 
   &__img {
     width: 100%;
+    height: 200px;
+    background: $mainColor;
     border-bottom: 1px solid $mainColor;
   }
 
@@ -111,11 +134,11 @@ products {
     background-color: inherit;
   }
   &__button:hover {
-    background-color: rgba(46, 60, 187, 0.404);
+    background-color: $bgcolor;
     border-color: #dddddd;
   }
   &__button:active {
-    background-color: rgba(46, 60, 187, 0.404);
+    background-color: $bgcolor;
     border-color: #bbbbbb;
   }
 }
@@ -123,18 +146,26 @@ products {
   // .prev__button
 
   &__button {
+    width: 180px;
+
+    border-radius: 0px 0px 0px 50px;
   }
 }
 .page {
   // .page__button
 
   &__button {
+    width: 30px;
+
+    border-radius: 2px;
   }
 }
 .next {
   // .next__button
 
   &__button {
+    width: 180px;
+    border-radius: 0px 50px 0px 0px;
   }
 }
 
@@ -142,7 +173,20 @@ products {
   // .products__page-changer
 
   &__page-changer {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
   }
+}
+.page-changer__btn {
+  margin: 5px;
+  border: 1px solid $mainColor;
+  height: 30px;
+  transition: 0.2s;
+}
+
+.page-changer__btn:hover {
+  background-color: $bgcolor;
 }
 .prev {
   // .prev__button

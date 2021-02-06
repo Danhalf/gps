@@ -3,12 +3,50 @@ footer {
 //====================================================================================================
 
 //====================================================================================================
-
 .footer {
-  min-height: 200px;
-  background-color: $bgcolor;
+  // .footer__content
+  background: $bgcolor;
+  &__content {
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    border-top: 1px solid $mainColor;
+    color: $mainColor;
+    opacity: 0.5;
+    margin-top: 20px;
+  }
 }
 
-.footer a {
-  color: $mainColor;
+.company {
+  display: flex;
+  justify-content: space-between;
+  // .company__info
+
+  &__info {
+    & span {
+      display: block;
+    }
+  }
+
+  // .company__logo
+
+  &__logo img {
+    height: 130px;
+  }
+
+  // .company__contacts
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    & a {
+      color: $mainColor;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $bgcolor;
+      }
+    }
+  }
 }

@@ -26,8 +26,8 @@ $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
-$mainColor: rgb(3, 3, 46);
-$bgcolor: rgba(34, 80, 148, 0.705);
+$mainColor: rgb(191, 207, 250);
+$bgcolor: rgba(31, 51, 82, 0.5);
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import 'null';
@@ -92,18 +92,25 @@ body {
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
   flex: 1 1 auto;
-  background-image: url(../img/main_bg.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/sl_1.webp);
   background-repeat: no-repeat;
   min-height: 1000px;
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
+  cursor: default;
+
   // .page__title
 
   &__title {
     text-align: center;
     margin: 50px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: $mainColor;
+    text-shadow: 3px 3px 5px #000;
+    opacity: 0.8;
+    margin: 150px 0 400px 0;
   }
 
   // .page__info
@@ -113,6 +120,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 300px;
   }
 
   // .page__info--item
@@ -134,6 +142,8 @@ body {
   &__codex {
     width: 85%;
     margin: 50px auto;
+    margin-bottom: 200px;
+    padding: 20px 30px;
   }
 
   // .page__info--data
@@ -151,5 +161,26 @@ body {
     display: block;
     height: 40%;
     text-align: center;
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  // .location__title
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  // .location__map
+
+  &__map iframe {
+    border: 10px solid $bgcolor;
+    border-radius: 5px;
   }
 }

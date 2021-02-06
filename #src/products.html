@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('_head.html',{ "title":"Главная" })
+  @@include('_head.html',{ "title":"Товары и услуги" })
   <body>
     <div class="wrapper">
       @@include('_header.html',{})
@@ -13,29 +13,25 @@
               <div class="categories__title">Категории</div>
               <div class="categories__items">
                 <div class="categories__item">
-                  Охранные системы <span>(1)</span>
+                  Охранные системы <span>1</span>
+                </div>
+                <div class="categories__item">GPS-трекеры <span>17</span></div>
+                <div class="categories__item">
+                  Датчики уровня топлива <span>15</span>
+                </div>
+                <div class="categories__item">Модульные АЗС <span>6</span></div>
+                <div class="categories__item">
+                  Периферийное оборудование <span>8</span>
                 </div>
                 <div class="categories__item">
-                  GPS-трекеры <span>(17)</span>
+                  Услуги монтажа <span>6</span>
                 </div>
-                <div class="categories__item">
-                  Датчики уровня топлива <span>(15)</span>
-                </div>
-                <div class="categories__item">
-                  Модульные АЗС <span>(6)</span>
-                </div>
-                <div class="categories__item">
-                  Периферийное оборудование <span>(8)</span>
-                </div>
-                <div class="categories__item">
-                  Услуги монтажа <span>(6)</span>
-                </div>
-                <div class="categories__item">Аренда ПО <span>(0)</span></div>
+                <div class="categories__item">Аренда ПО <span>0</span></div>
               </div>
             </nav>
             <div class="products__items">
               <div class="products__item product-item">
-                <img src="./img/company_logo.jpg" class="product-item__img" />
+                <img src="./img/prod.jpg" class="product-item__img" />
                 <h3 class="product-item__title">Pandora DXL-5200</h3>
                 <span class="product-item__price"
                   >Цена: <span class="product-item__price--value">14820</span>
@@ -144,12 +140,16 @@
               </div>
             </div>
           </section>
-          <nav class="products__page-changer">
-            <button class="prev__button">Предыдущая страница</button>
-            <button class="page__button">1</button>
-            <button class="page__button">2</button>
-            <button class="page__button">3</button>
-            <button class="next__button">Следуюшая страница</button>
+          <nav class="products__page-changer page-changer">
+            <button class="prev__button page-changer__btn">
+              Предыдущая страница
+            </button>
+            <button class="page__button page-changer__btn">1</button>
+            <button class="page__button page-changer__btn">2</button>
+            <button class="page__button page-changer__btn">3</button>
+            <button class="next__button page-changer__btn">
+              Следуюшая страница
+            </button>
           </nav>
         </div>
       </main>
