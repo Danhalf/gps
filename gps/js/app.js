@@ -1607,11 +1607,10 @@ const navSlide = () => {
   const burger = document.querySelector('.header__burger');
   const navMenu = document.querySelector('.header__navigation');
   const navlinks = document.querySelectorAll('.header__navigation a');
-  const page = document.querySelector('.page');
+  const overlay = document.querySelector('.overlay');
 
   burger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-    page.classList.toggle('hide_page');
     navlinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';

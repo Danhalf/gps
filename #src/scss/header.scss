@@ -18,7 +18,7 @@
       width: 30px;
       height: 3px;
       margin: 5px;
-      background: #fff;
+      background: $mainColor;
       transition: all 0.5s ease-in;
     }
     &.active .line1 {
@@ -65,13 +65,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $md1+px) {
   .header__navigation {
     width: 70%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $md2+px) {
   .header__burger {
     display: block;
     position: relative;
@@ -92,11 +92,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 50;
     height: calc(100vh - 70px);
     transition: right 0.5s ease-in;
   }
   .header__navigation a {
+    text-align: center;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: $md2+px) {
+  .header {
+    height: 60px;
+    background: none;
+    & img {
+      height: 60px;
+      width: 60px;
+    }
+
+    &__navigation {
+      top: 60px;
+    }
   }
 }
 

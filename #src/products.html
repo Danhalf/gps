@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('_head.html',{ "title":"Товары и услуги" })
+  @@include('_head.html',{ "title":"GARANT GPS >> Товары и услуги" })
   <body>
     <div class="wrapper">
       @@include('_header.html',{})
 
-      <main class="products__page">
+      <main class="products">
         <div class="products__container _container">
-          <nav class="breadcrumb">Товары и услуги</nav>
+          <nav class="breadcrumb">
+            <a href="./index.html">GARANT GPS</a> >>
+            <a href="#">Товары и услуги</a>
+          </nav>
           <section class="products__content">
             <nav class="products__categories categories">
               <div class="categories__title">Категории</div>
@@ -152,6 +155,7 @@
             </button>
           </nav>
         </div>
+        <div class="overlay"></div>
       </main>
       @@include('_footer.html',{})
     </div>

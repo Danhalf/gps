@@ -88,6 +88,8 @@ body {
 @import 'footer';
 @import 'home';
 @import 'products';
+@import 'news';
+@import 'contacts';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
@@ -164,6 +166,15 @@ body {
   }
 }
 
+.breadcrumb {
+  width: 100%;
+  min-height: 80px;
+  & a {
+    color: inherit;
+    font-size: 1rem;
+  }
+}
+
 .location {
   display: flex;
   flex-direction: column;
@@ -178,7 +189,13 @@ body {
   }
 
   // .location__map
-
+  &__map {
+    @media (max-width: $md3+px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
   &__map iframe {
     border: 10px solid $bgcolor;
     border-radius: 5px;

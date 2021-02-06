@@ -1,0 +1,196 @@
+contacts {
+}
+//====================================================================================================
+
+//====================================================================================================
+
+.contacts {
+  flex: 1 1 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/sl_3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  @media (max-width: $md2+px) {
+    padding-top: 160px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .contacts__container
+
+  &__container {
+  }
+
+  &__address {
+    background: $bgcolor;
+    display: flex;
+    border-radius: 8px;
+    border: 3px solid $mainColor;
+    width: 55%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 30px;
+    @media (max-width: $md2+px) {
+      width: 100%;
+    }
+    @media (max-width: $md3+px) {
+      padding: 5px;
+    }
+    & a {
+      display: flex;
+      justify-content: space-between;
+    }
+    & a,
+    h3 {
+      width: 80%;
+      color: inherit;
+      transition: color 0.3s ease;
+      @media (max-width: $md4+px) {
+        width: 100%;
+      }
+    }
+    & a:hover {
+      color: $bgcolor;
+      text-shadow: 2px 2px 2px $mainColor;
+    }
+  }
+
+  // .contacts__location
+
+  &__location {
+    margin-top: 100px;
+  }
+
+  .form {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 100px auto;
+    // .form__title
+
+    &__title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    // .form__field
+
+    &__field {
+    }
+
+    & input::placeholder,
+    textarea::placeholder {
+      color: $mainColor;
+      font-size: 0.875em;
+    }
+
+    & input:focus::placeholder,
+    textarea::focus:placeholder {
+      color: $bgcolor;
+    }
+
+    & input:hover::placeholder,
+    textarea:hover::placeholder {
+      color: $bgcolor;
+      font-size: 0.875em;
+    }
+
+    & input:hover:focus::placeholder,
+    textarea:hover:focus::placeholder {
+      color: $bgcolor;
+    }
+
+    & input:hover::placeholder,
+    textarea:hover::placeholder {
+      color: $bgcolor;
+      font-size: 0.875em;
+    }
+
+    & input {
+      font-size: 0.875em;
+      width: 100%;
+      height: 50px;
+      padding: 0px 15px 0px 15px;
+
+      background: $bgcolor;
+      outline: none;
+      color: $mainColor;
+
+      border: solid 1px #b3aca7;
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    & input:hover {
+      background: $mainColor;
+      color: $bgcolor;
+    }
+
+    & textarea {
+      width: 100%;
+      height: 110px;
+      max-height: 110px;
+      padding: 15px;
+
+      background: $bgcolor;
+      outline: none;
+
+      color: $mainColor;
+      font-size: 0.875em;
+
+      border: solid 1px $mainColor;
+
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+
+    & textarea:hover {
+      background: #b3aca7;
+      color: #e2dedb;
+    }
+  }
+}
+
+#submit {
+  width: 80%;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+.location {
+  // .location__map
+  width: 100%;
+  &__map {
+    width: 80%;
+
+    & iframe {
+      width: 100%;
+      min-height: 50vw;
+    }
+  }
+}

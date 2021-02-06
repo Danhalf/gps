@@ -20,17 +20,29 @@ footer {
 }
 
 .company {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: $md3+px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   // .company__info
 
   &__info {
+    @media (max-width: $md3+px) {
+      text-align: center;
+    }
     & span {
       display: block;
     }
   }
 
   // .company__logo
+  &__logo {
+    margin: 30px;
+  }
 
   &__logo img {
     height: 130px;
@@ -41,6 +53,9 @@ footer {
   &__contacts {
     display: flex;
     flex-direction: column;
+    @media (max-width: $md3+px) {
+      text-align: center;
+    }
     & a {
       color: $mainColor;
       transition: color 0.3s ease;
